@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Letterpress Solver</title>
+		<meta name="author" content="Ted Lee">
+		<meta name="description" content="A Letterpress Solver">
+		<meta name="keywords" content="letterpress">
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		
+		<script src="scripts/production_dict.js" type="type/javascript"></script>
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/ocr.js"></script>
+		<script src="scripts/ocr-training.js"></script>
+
+
+		<script src="scripts/main.js" type="text/javascript"></script>
+		<script src="scripts/ptrie-complete.js" type="text/javascript"></script>
+		
+	</head>
+
+	<body>
+		<div id="box">
+	        <div id="content">
+	        	<div class = "letterBlock">
+	        		<form id="lettersForm" action="solve">
+	        			<input type="text" id="tile0" name="tile0" class="tileClass" autocomplete="off" maxlength="1">
+	
+	        			<input type="text" id="tile1" name="tile1" class="tileClass" autocomplete="off" maxlength="1">
+	
+	        			<input type="text" id="tile2" name="tile2" class="tileClass" autocomplete="off" maxlength="1">
+	
+	        			<input type="text" id="tile3" name="tile3" class="tileClass" autocomplete="off" maxlength="1">
+	
+	        			<input type="text" id="tile4" name="tile4" class="tileClass" autocomplete="off" maxlength="1" >
+	
+						<br>
+	
+	        			<input type="text" id="tile5" name="tile5" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile6" name="tile6" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile7" name="tile7" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile8" name="tile8" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile9" name="tile9" class="tileClass" autocomplete="off" maxlength="1" >
+	
+						<br>
+							
+	        			<input type="text" id="tile10" name="tile10" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile11" name="tile11" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile12" name="tile12" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile13" name="tile13" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile14" name="tile14" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<br>
+	        			
+	        			<input type="text" id="tile15" name="tile15" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile16" name="tile16" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile17" name="tile17" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile18" name="tile18" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile19" name="tile19" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<br>
+	        			
+	        			<input type="text" id="tile20" name="tile20" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile21" name="tile21" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile22" name="tile22" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile23" name="tile23" class="tileClass" autocomplete="off" maxlength="1" >
+	
+	        			<input type="text" id="tile24" name="tile24" class="tileClass" autocomplete="off" maxlength="1">
+	        			
+	        			<br>
+	        			
+	        			<input type="submit" class="button" id="search_button" value="Go!">
+	        			
+	        			<input type="file" id="files" name="filesIncoming" multiple />
+
+	        			<!--
+	        			<input type="checkbox" value="None" id="magicBox" name="check" />
+						<label for="magicBox">Enable magic</label>
+						-->
+	        		</form>      
+	        	</div>
+	        </div>
+	        
+	        
+	        <div id="suggestions">
+	        	<ul>        		
+
+	        	</ul>
+	        </div>
+	        
+	        
+	        
+        </div>
+	</body>
+</html>
+
